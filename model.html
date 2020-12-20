@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="ru">
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+		<title>Unity WebGL Player | CourseWork</title>
+
+		<title>ПКМ - Имитационная модель</title>
+
+    <link rel="shortcut icon" href="img/Physics.ico">
+		<link type="text/css" rel="stylesheet" href="css/bootstrap.min.css"/>
+		<link rel="stylesheet" href="css/font-awesome.min.css">
+    <link href="css/main.css" rel="stylesheet" type="text/css"/>
+		<link type="text/css" rel="stylesheet" href="css/style.css"/>
+		<link rel="shortcut icon" href="CourseWork/TemplateData/favicon.ico">
+		<link rel="stylesheet" href="CourseWork/TemplateData/style.css">
+		<script src="CourseWork/TemplateData/UnityProgress.js"></script>
+		<script src="CourseWork/Build/UnityLoader.js"></script>
+		<script>
+			var unityInstance = UnityLoader.instantiate("unityContainer", "CourseWork/Build/CourseWork.json", {onProgress: UnityProgress});
+		</script>
+    </head>
+
+	<body>
+
+
+		<!-- Header -->
+		<header id="header">
+			<div class="container">
+
+				<div class="navbar-header">
+					<!-- Mobile toggle -->
+					<button class="navbar-toggle">
+						<span></span>
+					</button>
+					<!-- /Mobile toggle -->
+				</div>
+
+				<!-- Navigation -->
+				<nav id="nav">
+					<ul class="main-menu nav navbar-nav navbar-right">
+						<li><a href="index.html">Главная</a></li>
+						<li><a href="theory.html">Теория</a></li>
+						<li><a href="specification.html">Описание</a></li>
+						<li><a href="model.html">Имитационная модель</a></li>
+						<li><a href="contact.html">Контакты</a></li>
+					</ul>
+				</nav>
+				<!-- /Navigation -->
+
+			</div>
+		</header>
+
+		<div class="webgl-content">
+			<div id="unityContainer" style="width: 960px; height: 600px"></div>
+			<div class="footer">
+				<div class="webgl-logo"></div>
+				<div class="fullscreen" onclick="unityInstance.SetFullscreen(1)"></div>
+				<div class="title">CourseWork</div>
+			</div>
+		</div>
+
+
+
+
+
+		<!-- /preloader -->
+
+		<!-- jQuery Plugins -->
+    <script src="js/jquery.js"></script>
+		<script type="text/javascript" src="js/jquery.min.js"></script>
+		<script type="text/javascript" src="js/bootstrap.min.js"></script>
+		<script type="text/javascript" src="js/main.js"></script>
+	</body>
+</html>
